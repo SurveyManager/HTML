@@ -1,0 +1,145 @@
+@import "_var.sass"
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i');
+
+body
+  color: $colorTxtDark
+  font-family: 'Roboto', sans-serif
+header
+  padding-top: 20px
+  padding-bottom: 10px
+
+  #logo
+    max-width: 370px
+    img
+      max-width: 370px
+  nav.top
+    padding-top: 20px
+    text-align: center
+    ul
+      display: inline
+      padding-left: 0
+    li
+      display: inline-block
+      font-size: 18px
+      a
+        color: $colorTopNav
+        padding: 8px 15px
+        border-radius: 25px
+        text-decoration: none
+        line-height: 30px
+        &:hover
+          background-color: #53ADAD
+          color: $colorWhite
+      &.current
+        a
+          background-color: #53ADAD
+          color: $colorWhite
+  .login-btns
+    padding-top: 20px
+    width: 140px
+    .signup
+      background-color: $colorCarrot
+      color: $colorWhite
+      &:hover
+        background-color: $colorCarrotHover
+
+section.slider
+  padding-top: 30px
+  padding-bottom: 30px
+  background-color: #F3F5F4
+  border-top: 3px solid $colorCarrot
+  border-bottom: 3px solid $colorCarrot
+
+  h1
+    font-size: 34px
+  ul>li
+    font-size: 18px
+  .startFreeBtn > button
+    background-color: $colorCarrot
+    color: $colorWhite
+    &:hover
+      background-color: $colorCarrotHover
+  .sliderImg>img
+    width: 300px
+
+section.header
+  background-color: $bgSlider
+  border-top: 1px solid $colorCarrot
+  border-bottom: 1px solid $colorCarrot
+
+  h1
+    font-size: 25px
+section.content
+    background-color: $bgContent
+    padding: 20px 0
+
+    .item > img
+      width: 190px
+
+    .item > p
+      text-align: center
+      font-size: 20px
+      font-weight: 500
+      line-height: 40px
+
+footer
+  background-color: $colorCarrot
+  padding-bottom: 20px
+  .logoFooter
+    margin-top: 25px
+  .navFooter
+    margin-top: 30px
+    li
+      display: inline-block
+      font-size: 14px
+      a
+        color: $colorWhite
+        padding: 8px 15px
+        border-radius: 25px
+        text-decoration: none
+        &:hover
+          background-color: #53ADAD
+          color: $colorWhite
+      &.current
+        a
+          background-color: #53ADAD
+          color: $colorWhite
+
+  .subscribe
+    position: relative
+    margin-top: 25px
+    max-width: 310px
+    input
+      border: none
+      border-radius: 4px 0 0 4px
+      line-height: 30px
+      width: 230px
+      padding-left: 35px
+    button
+      color: $colorWhite
+      padding: 5px 10px
+      margin-left: -3px
+      margin-top: -4px
+      border-radius: 0 4px 4px 0
+      background-color: $colorTomato
+      &:hover
+        background-color: $colorTomatoHover
+        color: $colorWhite
+
+    span
+      position: absolute
+      background-color: #dfdfdf
+      border-radius: 20px
+      padding: 0px 6px 3px
+      font-size: 16px
+      font-weight: 600
+      color: #b7b7b7
+      top: 4px
+      left: 20px
+
+
+#copyright
+  background-color: #3C4242
+  color: $colorWhite
+  text-align: center
+  padding: 4px 0 2px
